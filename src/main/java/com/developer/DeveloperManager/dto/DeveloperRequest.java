@@ -21,6 +21,8 @@ public class DeveloperRequest {
     private String skills;
     private String gender;
     private LocalDateTime dateCreated;
+    private LocalDateTime dateModified;
+
 
 }
 

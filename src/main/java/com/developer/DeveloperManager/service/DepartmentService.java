@@ -8,10 +8,19 @@ import java.text.ParseException;
 
 public interface DepartmentService {
     Response saveDepartment(DepartmentRequest departmentRequest) throws ParseException;
-    Response getAllDepartment();
 
-/*
-    Response getDeveloperById(String dept_Id);
-*/
+    Response updateDepartmentName(DepartmentRequest departmentRequest) throws ParseException;
+
+    Response getAllDepartment();
+    Response getById(Long dept_Id);
+    Response getByDeptName(String dept_Name);
+    Response getByKeyWord(String name);
+
+    Response getDeveloperByDept(Long dept_Id);
+
+
+
+//    Response getDeveloperById(Long dept_Id);
+
 
 }
